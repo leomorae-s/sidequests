@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sidequests
+    profile: dev
+
+  datasource:
+    driver: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sidequests_db
+    username: postgres
+    password: ${DB_PASSWORD}
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
